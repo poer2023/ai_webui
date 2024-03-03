@@ -8,6 +8,7 @@ from utils.gradio_utils import *
 import gradio as gr
 from gradio.themes.utils import colors
 from utils.gradio_tabs import *
+torch.manual_seed(1234)
 
 
 os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
@@ -77,7 +78,7 @@ def parse_opt():
     parser.add_argument('-s', "--share", action="store_true", help='whether public url')
     opt = parser.parse_args()
     return opt
- 
+
 
 if __name__ == "__main__":
     opt = parse_opt()

@@ -10,8 +10,8 @@ ChatGLMHandler:
   trust_remote_code: true
   init_model_when_start_server: false
 
-VisualChatHandler:
-  model_path: /mnt/d/ai_dev/visualglm-6b/model_weights
+ChatVLMHandler:
+  vlm_model_path: ./model_weights/Qwen-VL-Chat  # /mnt/d/ai_dev/visualglm-6b/model_weights
   device: 'cuda:1'
   quant: 8
   trust_remote_code: true

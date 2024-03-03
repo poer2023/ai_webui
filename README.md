@@ -15,7 +15,7 @@
 
 ## 🌟 1. Introduction
 ai-webui is a browser-based interface designed to provide a universal AI creation platform.
-<img align="center" src="assets/visualchat_demo.jpg" alt="drawing" width="768"/>
+<img align="center" src="assets/visualchat_demo.png" alt="drawing" width="768"/>
 
 This project provides basic functionalities such as image segmentation, object tracking, image restoration, speech recognition, speech synthesis, as well as advanced features such as chatbot, video translation, and video watermark removal, which greatly improve the efficiency of short video creation.
 

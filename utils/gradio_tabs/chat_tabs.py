@@ -77,10 +77,13 @@ def visualchat_tab(visualchat_args, ai_handler):
                     gr.Markdown('\n' + MAINTENANCE_NOTICE + '\n')
         history = gr.State([])
         
-        submitBtn.click(ai_handler.visualchat_handler.stream_chat, [user_input, image_path, chatbot, max_length, top_p, temperature, history], [chatbot, history],
-                        show_progress=True)
-        image_path.upload(ai_handler.visualchat_handler.stream_chat2, [image_path, chatbot, max_length, top_p, temperature], [chatbot, history],
-                        show_progress=True)
-        image_path.clear(misc.reset_state, outputs=[image_path, chatbot, history], show_progress=True)
-        submitBtn.click(misc.reset_user_input, [], [user_input])
-        emptyBtn.click(misc.reset_state, outputs=[image_path, chatbot, history], show_progress=True)
+        # submitBtn.click(ai_handler.visualchat_handler.stream_chat, [user_input, image_path, chatbot, max_length, top_p, temperature, history], [chatbot, history],
+        #                 show_progress=True)
+        # image_path.upload(ai_handler.visualchat_handler.stream_chat2, [image_path, chatbot, max_length, top_p, temperature], [chatbot, history],
+        #                 show_progress=True)
+        
+        # submitBtn.click(ai_handler.chatvlm_handler.chat, [user_input, image_path, chatbot, history], [chatbot, history], show_progress=True)
+        submitBtn.click(ai_handler.chatvlm_handler.chat_stream, [user_input, image_path, chatbot, history], [chatbot, history], show_progress=True)
+        # image_path.clear(misc.reset_state, outputs=[image_path, chatbot, history], show_progress=True)
+        # submitBtn.click(misc.reset_user_input, [], [user_input])
+        emptyBtn.click(misc.reset_state2, outputs=[chatbot, history], show_progress=True)

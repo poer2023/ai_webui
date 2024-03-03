@@ -4,5 +4,5 @@ visualchat:
   switch: true
   name: 多模态问答
   model_type: 
-    choices: ["visualglm"]
-    value: "visualglm"
+    choices: ["qwen-vl-chat"]
+    value: "qwen-vl-chat"

@@ -48,6 +48,9 @@ def reset_user_input():
 def reset_state():
     return [], [], None
 
+def reset_state2():
+    return [], None
+
 def postprocess(self, y):
     if y is None:
         return []

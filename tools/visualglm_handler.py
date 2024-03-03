@@ -3,7 +3,7 @@ from .base import BaseHandler
 from utils.chatglm_utils import *
 
 
-class VisualChatHandler(BaseHandler):
+class VisualGLMHandler(BaseHandler):
     def __init__(self, args):
         super().__init__(args)
         self.model_path = self.handle_args.get('model_path')
